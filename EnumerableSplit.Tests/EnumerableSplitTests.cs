@@ -139,17 +139,28 @@ namespace SawNaw.LinqExtensions.EnumerableSplit.Tests
         [Test]
         public void Split_Works_With_Classes_Based_On_Given_Condition()
         {
-            var list = GetPersonList();
-            var result = list.Split(l => l.DateOfBirth.Year < 2000);
+            var records = new Person[]
+            {
+                new Person("John", new DateOnly(2020, 01, 02), new[] { "manager" }),
+                new Person("Mike Wang", new DateOnly(2022, 10, 11), new[] { "engineer" }),
+                new Person("Separator 1", new DateOnly(2021, 11, 04), new[] { "NA" }),
+                new Person("Wilbur", new DateOnly(1999, 11, 21), new[] { "manager" }),
+                new Person("Shaun", new DateOnly(2022, 08, 31), new[] { "pilot" }),
+                new Person("Separator 2", new DateOnly(1982, 04, 24), new[] { "NA" }),
+                new Person("Mario", new DateOnly(1986, 01, 12), new[] { "manager" }),
+            };
+
+            var result = records.Split(r => r.Name.Contains("Separator"));
 
             Assert.Multiple(() =>
             {
                 Assert.That(result.Count, Is.EqualTo(3));
-                Assert.That(result.First().Count, Is.EqualTo(3));
-                Assert.That(result.ElementAt(1).Count, Is.EqualTo(1));
-                Assert.That(result.ElementAt(2).Count, Is.EqualTo(3));
-                Assert.That(result.Any(r => r.Any(t => t.Name == "Wilbur")), Is.False);
-                Assert.That(result.Any(r => r.Any(t => t.Name == "Mario")), Is.False);
+
+                Assert.That(result.First().Count, Is.EqualTo(2));
+                Assert.That(result.ElementAt(1).Count, Is.EqualTo(2));
+                Assert.That(result.ElementAt(2).Count, Is.EqualTo(1));
+
+                Assert.That(result.Any(r => r.Any(t => t.Name.Contains("Separator"))), Is.False);
             });
         }
 

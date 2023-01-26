@@ -1,4 +1,6 @@
-﻿namespace SawNaw.LinqExtensions.EnumerableSplit
+﻿using System;
+
+namespace SawNaw.LinqExtensions.EnumerableSplit
 {
     public static class EnumerableSplit
     {
@@ -66,21 +68,15 @@
         /// <param name="separator">The separating elements.</param>
         /// <returns>A collection containing the results of the split.</returns>
         /// 
-        /// <example>
-        /// string[] things = {"pie", "apple", "cake", "mud-pie", "nuts", "plum", "mud-spread", "milk", "butter"};
-        /// var edibleThings = things.Split(m => m.Contains("mud-pie", "mud-spread"));
-        /// 
-        /// edibleThings will contain these collections: 
-        ///    {"pie", "apple", "cake"}
-        ///    {"nuts", "plum"}
-        ///    {"milk", "butter"}
-        /// </example>
-        /// 
         /// <exception cref="ArgumentNullException">Thrown when any provided argument is null.</exception>
         /// 
         /// <remarks>
         /// Think of it as <seealso cref="string.Split(char[]?)"/> for collections.
         /// </remarks>
+        /// 
+        /// <example>
+        /// See included console project.
+        /// </example>
         public static IEnumerable<IEnumerable<T>> Split<T>(this IEnumerable<T> source, params T[] separator)
         {
             return Split(source, t => separator.Contains(t));
