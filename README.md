@@ -1,5 +1,5 @@
 # LINQ extension to split a collection into several.
-Think of it as `String.Split()` for collections.<br />
+Think of it as a `String.Split()` that works on collections of classes.<br />
 
 Example: Split a collection by specifying the splitters.
 --------
