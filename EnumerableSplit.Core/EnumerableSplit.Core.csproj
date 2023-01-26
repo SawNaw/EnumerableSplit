@@ -5,15 +5,17 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Title>Enumerable Split</Title>
+    <Title>SawNaw.LinqExtensions.EnumerableSplit</Title>
     <PackageId>SawNaw.LinqExtensions.EnumerableSplit</PackageId>
     <Authors>Saw Naw</Authors>
-    <Description>LINQ extension to split a collection into several collections based on a given condition.</Description>
+    <Description>LINQ extension to split a collection into several collections based on given values, or a given condition. Think of it as a string.Split() that works on collections of classes.</Description>
     <PackageTags>LINQ; collection; split; extension;</PackageTags>
-    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+    <PackageReleaseNotes>Update readme and add more metadata</PackageReleaseNotes>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
+    <PackageProjectUrl>https://github.com/SawNaw/EnumerableSplit</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/SawNaw/EnumerableSplit</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
