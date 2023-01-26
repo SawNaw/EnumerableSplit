@@ -1,6 +1,6 @@
 ﻿namespace SawNaw.Extensions.EnumerableSplit
 {
-    public static class EnumerableExtensions
+    public static class EnumerableSplit
     {
         /// <summary>
         /// Splits a collection into multiple collections based on a separating condition.
