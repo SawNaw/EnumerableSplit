@@ -1,4 +1,4 @@
-﻿namespace SawNaw.Extensions.EnumerableSplit
+﻿namespace SawNaw.LinqExtensions.EnumerableSplit
 {
     public static class EnumerableSplit
     {

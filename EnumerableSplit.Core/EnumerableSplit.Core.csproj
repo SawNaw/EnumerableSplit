@@ -1,18 +1,19 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFrameworks>net7.0;net6.0</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>Enumerable Split</Title>
-    <PackageId>saw-naw-enumerable-split</PackageId>
+    <PackageId>SawNaw.LinqExtensions.EnumerableSplit</PackageId>
     <Authors>Saw Naw</Authors>
     <Description>LINQ extension to split a collection into several collections based on a given condition.</Description>
     <PackageTags>LINQ; collection; split; extension;</PackageTags>
     <PackageReleaseNotes>Initial release</PackageReleaseNotes>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Version>1.0.2</Version>
   </PropertyGroup>
 
   <ItemGroup>
