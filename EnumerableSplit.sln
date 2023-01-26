@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnumerableSplit.Core", "EnumerableSplit.Core\EnumerableSplit.Core.csproj", "{01991E24-4A35-4183-A364-BDEFC6ED0233}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnumerableSplit.Tests", "EnumerableSplit.Tests\EnumerableSplit.Tests.csproj", "{94F6B99E-D68A-4B8A-A580-E35E8DFD96A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01991E24-4A35-4183-A364-BDEFC6ED0233}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01991E24-4A35-4183-A364-BDEFC6ED0233}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01991E24-4A35-4183-A364-BDEFC6ED0233}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01991E24-4A35-4183-A364-BDEFC6ED0233}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94F6B99E-D68A-4B8A-A580-E35E8DFD96A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94F6B99E-D68A-4B8A-A580-E35E8DFD96A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94F6B99E-D68A-4B8A-A580-E35E8DFD96A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94F6B99E-D68A-4B8A-A580-E35E8DFD96A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1C235797-1E23-4B55-AF2E-6A4073CFCE9D}
+	EndGlobalSection
+EndGlobal
