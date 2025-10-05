@@ -1,5 +1,6 @@
-﻿using SawNaw.LinqExtensions.EnumerableSplit.Core;
-using System;
+// Sample console application demonstrating the usage of EnumerableSplit library.
+
+using SawNaw.LinqExtensions.EnumerableSplit.Core;
 
 namespace SawNaw.LinqExtensions.EnumerableSplit.Terminal
 {
@@ -40,6 +41,7 @@ namespace SawNaw.LinqExtensions.EnumerableSplit.Terminal
                 }
                 Console.WriteLine("***END OF COLLECTION***");
             }
+            Console.ReadLine();
         }
     }
 }
