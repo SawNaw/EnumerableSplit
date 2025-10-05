@@ -42,7 +42,7 @@ jobs:
         run: dotnet build --configuration Release
       - name: Run unit tests
         shell: powershell
-        run: dotnet test --no-build --verbosity normal 
+        run: dotnet test --no-build --configuration Release --verbosity normal 
       - name: Analyze
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}

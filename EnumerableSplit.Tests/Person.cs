@@ -1,4 +1,4 @@
-﻿namespace SawNaw.LinqExtensions.EnumerableSplit.Tests
+﻿namespace EnumerableSplit.Tests
 {
     internal class Person
     {
