@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net7.0;net6.0</TargetFrameworks>
+    <TargetFrameworks>net8.0</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
@@ -11,18 +11,10 @@
     <Description>LINQ extension to split a collection into several collections based on given values, or a given condition. Think of it as a string.Split() that works on collections of classes.</Description>
     <PackageTags>LINQ; collection; split; extension;</PackageTags>
     <PackageReleaseNotes>Add better examples</PackageReleaseNotes>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Version>1.0.5</Version>
     <PackageProjectUrl>https://github.com/SawNaw/EnumerableSplit</PackageProjectUrl>
     <RepositoryUrl>https://github.com/SawNaw/EnumerableSplit</RepositoryUrl>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Include="..\..\..\..\OneDrive\Desktop\README.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-  </ItemGroup>
 
 </Project>

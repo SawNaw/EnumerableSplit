@@ -1,6 +1,8 @@
-namespace SawNaw.LinqExtensions.EnumerableSplit.Tests
+using SawNaw.LinqExtensions.EnumerableSplit;
+
+namespace EnumerableSplit.Tests
 {
-    public partial class Tests
+    public class SplitTests
     {
         private static IEnumerable<Person> GetPersonList()
         {
