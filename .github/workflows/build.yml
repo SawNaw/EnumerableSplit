@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Build solution
         shell: powershell
-        run: dotnet build --configuration Release
+        run: dotnet build EnumerableSplit.sln --configuration Release
       - name: Run unit tests
         shell: powershell
         run: dotnet test --no-build --configuration Release --verbosity normal 
