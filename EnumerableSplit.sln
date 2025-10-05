@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnumerableSplit.Core", "EnumerableSplit.Core\EnumerableSplit.Core.csproj", "{01991E24-4A35-4183-A364-BDEFC6ED0233}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SawNaw.LinqExtensions.EnumerableSplit.Core", "EnumerableSplit.Core\SawNaw.LinqExtensions.EnumerableSplit.Core.csproj", "{01991E24-4A35-4183-A364-BDEFC6ED0233}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnumerableSplit.Terminal", "EnumerableSplit.Console\EnumerableSplit.Terminal.csproj", "{00175AA7-9809-40A7-9618-AC70A79D35D4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SawNaw.LinqExtensions.EnumerableSplit.Terminal", "EnumerableSplit.Console\SawNaw.LinqExtensions.EnumerableSplit.Terminal.csproj", "{00175AA7-9809-40A7-9618-AC70A79D35D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnumerableSplit.UnitTests", "EnumerableSplit.UnitTests\EnumerableSplit.UnitTests.csproj", "{55CB1DA7-200A-4A2C-BB63-BE779834E0FD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SawNaw.LinqExtensions.EnumerableSplit.UnitTests", "EnumerableSplit.UnitTests\SawNaw.LinqExtensions.EnumerableSplit.UnitTests.csproj", "{55CB1DA7-200A-4A2C-BB63-BE779834E0FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

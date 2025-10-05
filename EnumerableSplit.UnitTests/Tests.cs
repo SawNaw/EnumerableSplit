@@ -1,6 +1,6 @@
-using SawNaw.LinqExtensions.EnumerableSplit;
+using SawNaw.LinqExtensions.EnumerableSplit.Core;
 
-namespace EnumerableSplit.UnitTests
+namespace SawNaw.LinqExtensions.EnumerableSplit.UnitTests
 {
     public class EnumerableSplitTests
     {
@@ -44,8 +44,8 @@ namespace EnumerableSplit.UnitTests
         [Fact]
         public void Split_WithPredicate_ThrowsOnNullSource()
         {
-            IEnumerable<int> input = null;
-            Assert.Throws<ArgumentNullException>(() => input.Split(i => i == 0).ToList());
+            IEnumerable<int>? input = null;
+            Assert.Throws<ArgumentNullException>(() => input!.Split(i => i == 0).ToList());
         }
 
         [Fact]
@@ -73,8 +73,8 @@ namespace EnumerableSplit.UnitTests
         [Fact]
         public void Split_WithSeparators_ThrowsOnNullSource()
         {
-            IEnumerable<int> input = null;
-            Assert.Throws<ArgumentNullException>(() => input.Split(0).ToList());
+            IEnumerable<int>? input = null;
+            Assert.Throws<ArgumentNullException>(() => input!.Split(0).ToList());
         }
     }
 }

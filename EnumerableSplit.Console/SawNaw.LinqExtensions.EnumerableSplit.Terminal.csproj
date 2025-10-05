@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EnumerableSplit.Core\EnumerableSplit.Core.csproj" />
+    <ProjectReference Include="..\EnumerableSplit.Core\SawNaw.LinqExtensions.EnumerableSplit.Core.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SawNaw.LinqExtensions.EnumerableSplit
+namespace SawNaw.LinqExtensions.EnumerableSplit.Core
 {
     public static class EnumerableSplit
     {
@@ -44,14 +44,14 @@ namespace SawNaw.LinqExtensions.EnumerableSplit
                 {
                     subCollection.Add(item);
                 }
-                else if (subCollection.Any())
+                else if (subCollection.Count > 0)
                 {
                     result.Add(subCollection);
-                    subCollection = new List<T>();
+                    subCollection = [];
                 }
             }
 
-            if (subCollection.Any())
+            if (subCollection.Count > 0)
             {
                 result.Add(subCollection);
             }
@@ -79,7 +79,7 @@ namespace SawNaw.LinqExtensions.EnumerableSplit
         /// </example>
         public static IEnumerable<IEnumerable<T>> Split<T>(this IEnumerable<T> source, params T[] separator)
         {
-            return Split(source, t => separator.Contains(t));
+            return source.Split(t => separator.Contains(t));
         }
     }
 }

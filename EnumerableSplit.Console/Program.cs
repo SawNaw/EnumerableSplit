@@ -1,7 +1,7 @@
-﻿using SawNaw.LinqExtensions.EnumerableSplit;
+﻿using SawNaw.LinqExtensions.EnumerableSplit.Core;
 using System;
 
-namespace EnumerableSplit.Terminal
+namespace SawNaw.LinqExtensions.EnumerableSplit.Terminal
 {
     public class Program
     {
